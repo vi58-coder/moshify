@@ -6,6 +6,12 @@
     --color-body: #918ca4;
   }
 
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
+
   html{
     font-size: 16px;
   }
@@ -167,3 +173,66 @@
   align-items: center;
 
  }
+/*Buttons */
+
+ .btn{
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  padding: 2rem 3rem;
+  border: 0;
+  text-align: center;
+  border-radius: 40px;
+  cursor: pointer;
+  white-space: nowrap;
+ }
+
+ .btn--primary{
+  background-color: var(--color-primary);
+  color: white;
+ }
+
+ .btn--primary:hover{
+  background: #3a8ffd;
+ }
+
+ .btn--secondary{
+   background: var(--color-secondary);
+   color: white;
+ }
+
+ .btn--secondary:hover{
+  background: #00c8eb;
+ }
+
+ .btn--accent{
+  background-color: var(--color-accent);
+  color: white;
+ }
+
+ .btn--accent:hover{
+  background: #ec3000;
+ }
+
+ .btn--block{
+  width: 100%;
+  display: inline-block;
+ }
+
+ .btn--outline{
+  background: white;
+  color: var(--color-headings);
+  border: 2px solid var(--color-headings);
+ }
+
+ .btn--outline:hover {
+  background: var(--color-headings);
+  color: white;
+ }
+
+ @media  screen and(min-width) {
+  btn{
+  font-size: 1.5rem;
+ }
+} 
